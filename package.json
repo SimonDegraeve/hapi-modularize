@@ -1,0 +1,35 @@
+{
+  "name": "hapi-modularize",
+  "version": "1.0.0",
+  "description": "Helper for modular plugin based Hapi servers",
+  "homepage": "https://github.com/SimonDegraeve/hapi-modularize",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonDegraeve/hapi-modularize.git"
+  },
+  "keywords": [
+    "hapi",
+    "register",
+    "server",
+    "plugin",
+    "modular"
+  ],
+  "author": "Simon Degraeve <simon.degraeve@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SimonDegraeve/hapi-modularize/issues"
+  },
+  "dependencies": {
+    "glue": "^2.0.0",
+    "hoek": "^2.14.0"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7"
+  }
+}
