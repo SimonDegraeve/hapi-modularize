@@ -18,7 +18,6 @@ npm install hapi-register-plugin
 
 ## Usage
 
-<<<<<<< HEAD
 ```js
 modularize(options, plugin);
 ```
@@ -55,42 +54,6 @@ Creates a new [Plugin](http://hapijs.com/api#plugins) where:
   - `options` - an options object passed to the plugin during registration.
   - `next` - a callback method the function must call to return control back to the framework to complete the registration process with signature `function(error)` where:
     - `error` - any plugin registration error.
-=======
-**Create the connection object**
-
-```js
-// Read configuration from process.cwd() + '/webpack.config.js'
-var WebpackConnection = require('hapi-webpack-connection')();
-
-
-// Or define configuration
-var webpackConfig = {
-  // ... webpack options
-  // See http://webpack.github.io/docs/configuration.html
-
-  devServer: {
-    // ... webpack-dev-server options
-    // See http://webpack.github.io/docs/webpack-dev-server.html
-  }
-};
-var WebpackConnection = require('hapi-webpack-connection')(webpackConfig);
-```
-
-**And use it with Hapi**
-
-The connection has a `webpack` label and Webpack configuration can be accessed via `connection.settings.app`.
-
-```js
-var Hapi = require('hapi');
-
-var server = new Hapi.Server();
-server.connection(WebpackConnection);
-
-server.start(function () {
-  console.log('Server running at:', server.info.uri);
-});
-```
->>>>>>> origin/master
 
 
 
