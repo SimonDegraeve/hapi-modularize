@@ -59,7 +59,7 @@ Creates a new [Plugin](http://hapijs.com/api#plugins) where:
 
 ## Examples
 
-In this example, `myApp` will listen on port `80` and will have `client`and `api` registered as plugins. But I can execute `client` or `api` independently, and they will respectively listen on port `3000` and `3001`.
+In this example, `myApp` will listen on port `80` and will have `client`and `api` registered as plugins. But you can also execute `client` or `api` independently, and they will respectively listen on port `3000` and `3001`.
 
 /client/index.js
 ```js
