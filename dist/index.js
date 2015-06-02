@@ -6,6 +6,8 @@ var _objectWithoutProperties = function (obj, keys) { var target = {}; for (var 
 
 var _defineProperty = function (obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); };
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
@@ -94,7 +96,7 @@ exports['default'] = function (_x2, fn) {
 
   // Set plugin attributes
   var plugin = fn;
-  plugin.attributes = pkg ? { pkg: pkg } : attributes;
+  plugin.attributes = pkg ? _extends({}, attributes, { name: pkg.name, version: pkg.version }) : attributes;
 
   // Create new server if the plugin is not required
   if (!module.parent.parent && Object.keys(modularizeOptions).length) {

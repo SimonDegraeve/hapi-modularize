@@ -72,7 +72,7 @@ export default (options = {}, fn) => {
 
   // Set plugin attributes
   const plugin = fn;
-  plugin.attributes = pkg ? {pkg} : attributes;
+  plugin.attributes = pkg ? {...attributes, name: pkg.name, version: pkg.version} : attributes;
 
   // Create new server if the plugin is not required
   if (!module.parent.parent && Object.keys(modularizeOptions).length) {
