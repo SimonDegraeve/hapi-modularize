@@ -13,7 +13,7 @@ You create one repository/module/plugin with your browser-client application. An
 ## Installation
 
 ```js
-npm install hapi-register-plugin
+npm install hapi-modularize
 ```
 
 ## Usage
